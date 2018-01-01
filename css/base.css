@@ -11,3 +11,8 @@ a {
 p {
   margin-bottom: 0 !important;
 }
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
