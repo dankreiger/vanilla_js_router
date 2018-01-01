@@ -15,7 +15,7 @@
   cursor: pointer;
   width: 100%;
   border-radius: 2px;
-  height: 240px;
+  height: 130px;
   max-width: 800px;
   font-size: 1.5em;
   -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
@@ -49,23 +49,33 @@
   height: 87vh;
 }
 
-.lesson-header {
-  margin-top: -3.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .card-buttons {
   width: 100%
+}
+.lesson-header p {
+  display: none;
 }
 
 .card-buttons .btn, .card-buttons .btn:hover,  .card-buttons .btn:focus, .card-buttons .btn:active {
   color: #fff !important;
 }
 
+@media (min-width: 880px) {
+  .lesson-header {
+    margin-top: -3.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .lesson-header p {
+    display: flex;
+  }
+}
+
 @media (min-width: 576px) {
   .flashcard {
-    width: 80%;
+    height: 250px;
+    width: 70%
   }
+
   .card-buttons {
     width: 50%
   }
