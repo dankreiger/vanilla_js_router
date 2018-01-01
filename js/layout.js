@@ -8,6 +8,10 @@ class Layout {
   }
 
   show(el) {
+    $('.main, .navbar .nav-link').click(function(){
+      $(".navbar-collapse").collapse('hide');
+    });
+
     for (let page of this.pages) {
       const div = document.createElement('div');
       div.classList += 'flex flex-columns flex-align-items-center';
