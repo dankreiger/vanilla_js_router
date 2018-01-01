@@ -1,102 +1,36 @@
-body {
-  background: #161718;
-}
-.container {
-  height: 120px;
-  width: 600px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.flip-container {
-  perspective: 1000;
-  margin: 10px;
-  float: left;
+/*-------- flex container --------*/
+
+.flashcard {
+  background: #fff;
   cursor: pointer;
-  /*  &:hover{
-    .flippable {
-      transform: rotateY(180deg);
-    }
-  }*/
+  width: 100%;
+  border-radius: 2px;
+  /*max-width: 600px;*/
+  height: 100%;
+  max-height: 400px;
+  max-width: 800px;
+  font-size: 1.5em;
+  -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-.flip-container .flippable {
-  transition: 0.5s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-.flip-container .flipme {
+
+.flashcard.flipped-card {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-.flip-container,
-.front,
-.back {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  font-size: 40px;
-  border-radius: 5px;
-}
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.front {
-  z-index: 2;
-  color: white;
-}
-.front span {
-  font-size: 20px;
-  position: absolute;
-  top: -30px;
-  left: 10px;
-  font-family: verdana;
-}
-.back {
-  transform: rotateY(180deg);
-  font-size: 18px;
-  border: 1px solid;
-  font-family: Verdana;
-  color: white;
-}
-.ac-bicycle .front {
-  background: #1189d1;
-}
-.ac-bicycle .back {
-  background: #052c44;
-  border-color: #86cbf5;
-}
-.ac-car .front {
-  background: #18b755;
-}
-.ac-car .back {
-  background: #063016;
-  border-color: #7aeea7;
-}
-.ac-truck .front {
-  background: #f3b50b;
-}
-.ac-truck .back {
-  background: #614804;
-  border-color: #fbe19c;
-}
-.ac-umbrella .front {
-  background: #ef4809;
-}
-.ac-umbrella .back {
-  background: #5c1c03;
-  border-color: #fbb296;
-}
-.ac-plane .front {
-  background: #E82C0C;
-}
-.ac-plane .back {
-  background: #571004;
-  border-color: #f9a294;
 }

@@ -10,12 +10,21 @@ class Layout {
   show(el) {
     for (let page of this.pages) {
       const div = document.createElement('div');
+      div.classList += 'flex flex-columns flex-align-items-center';
       page.show(div);
       el.appendChild(div);
-    }
 
-    $(".flippable").click(function(){
-      $(this).toggleClass("flipme");
-    });
+      $('.flashcard').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('flipped-card');
+        if ($(this).hasClass('flipped-card')) {
+          $('.front').addClass('hidden');
+          $('.back').removeClass('hidden');
+        } else {
+          $('.back').addClass('hidden');
+          $('.front').removeClass('hidden');
+        }
+      });
+    }
   }
 }
