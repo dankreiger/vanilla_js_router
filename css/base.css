@@ -5,14 +5,26 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #111;
 }
 
 p {
   margin-bottom: 0 !important;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  padding-top: 22px;
-  padding-bottom: 18px;
+button {
+  border-radius: 0 !important;
+}
+
+.btn-lg {
+  padding-left: 0.7rem !important;
+  padding-right: 0.7rem !important;
+  font-size: 1.1em !important;
+}
+
+/* give room for mobile top bar */
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+  .navbar {
+    padding-top: 22px;
+    padding-bottom: 18px;
+  }
 }

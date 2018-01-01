@@ -10,12 +10,12 @@
 .flashcard {
   display: none;
   margin-top: 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   background: #fff;
   cursor: pointer;
   width: 100%;
   border-radius: 2px;
-  height: 300px;
+  height: 240px;
   max-width: 800px;
   font-size: 1.5em;
   -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
@@ -45,8 +45,21 @@
   transform: rotateY(180deg);
 }
 
+.lesson-content {
+  height: 87vh;
+}
+
+.lesson-header {
+  margin-top: -3.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .card-buttons {
   width: 100%
+}
+
+.card-buttons .btn, .card-buttons .btn:hover,  .card-buttons .btn:focus, .card-buttons .btn:active {
+  color: #fff !important;
 }
 
 @media (min-width: 576px) {

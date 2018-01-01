@@ -14,7 +14,7 @@ class Layout {
       page.show(div);
       el.appendChild(div);
 
-      // not so nice here - please refactor
+      // not so nice here - please refactor code below
       $('.flashcard').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('flipped-card');
@@ -27,6 +27,8 @@ class Layout {
         }
       });
 
+
+      // buttons
       $('.next-card').click(function() {
         if($('.flashcard').index($('.flashcard.show-flex')) < $('.flashcard').length - 1) {
           $('.flashcard.show-flex').removeClass('show-flex').next().addClass('show-flex');
@@ -52,6 +54,13 @@ class Layout {
           $('.back').addClass('hidden');
           $('.front').removeClass('hidden');
         }
+      });
+
+      $('.say-btn').click(function() {
+        let artyom = new Artyom();
+        artyom.say($('.show-flex .front').text(), {
+          lang:$(this).parent().parent().data('lang')
+        });
       });
     }
   }
