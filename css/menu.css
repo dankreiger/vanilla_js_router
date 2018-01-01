@@ -2,7 +2,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.menu-item {
+.menu-item  {
   padding: 0.75rem;
   font-size: 1.5em;
   transition: 0.25s all ease;
@@ -12,4 +12,17 @@
 .menu-item:hover {
   color: #5f91ec;
   transform: scale(1.03);
+}
+
+@media (min-width: 576px) {
+  .main-menu {
+    height: 500px;
+  }
+  #german_submenu, #russian_submenu {
+    transition: 0.25s all ease;
+  }
+
+  #german_submenu:hover, #russian_submenu:hover {
+    transform: scale(1.03);
+  }  
 }
