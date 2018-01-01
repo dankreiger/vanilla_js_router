@@ -4,5 +4,5 @@ const r = new Router(
     russian: new Layout(new Page('menu.html'), new Page('russian.html')),
     '#default': new Page('menu.html'),
   },
-  document.querySelector('main')
+  document.querySelector('.main')
 );
