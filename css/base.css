@@ -15,10 +15,10 @@ button {
   border-radius: 0 !important;
 }
 
-.btn-lg {
-  padding-left: 0.7rem !important;
-  padding-right: 0.7rem !important;
-  font-size: 1.1em !important;
+.btn-card {
+  padding: 0.7rem !important;
+  padding: 0.8rem 1.2rem !important;
+  outline: 0 !important;
 }
 
 /* give room for mobile top bar */

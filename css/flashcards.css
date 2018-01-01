@@ -1,4 +1,4 @@
-.homepage, .prev-page  {
+.homepage, .prev-page {
   font-size: 0.8em;
 }
 
@@ -7,6 +7,7 @@
 }
 
 /* flashcard */
+
 .flashcard {
   display: none;
   margin-top: 0.3rem;
@@ -50,13 +51,96 @@
 }
 
 .card-buttons {
-  width: 100%
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-around;
 }
+
+.btn-card {
+  flex: 1 1 100%;
+  cursor: pointer;
+  position: relative;
+  /*margin: 30px auto;*/
+  margin-right: 0.5rem;
+  padding: 0;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.btn-card:last-child {
+  margin-right: 0;
+}
+
+.btn-card:hover, .btn-card:focus {
+  background-color: #27ae60;
+}
+
+.btn-card.blue {
+  background-color: #304FFE;
+}
+
+.btn-card.blue:hover, .btn-card.blue:focus {
+  background-color: #3D5AFE;
+}
+
+.btn-card.orange {
+  background-color: #FF9800;
+}
+
+.btn-card.orange:hover, .btn-card.orange:focus {
+  background-color: #FB8C00;
+}
+
+.btn-card.red {
+  background-color: #FF4136;
+}
+
+.btn-card.red:hover, .btn-card.red:focus {
+  background-color: #FF3025;
+}
+
+.btn-card span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn-card:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, 0.3);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-card:active:before {
+  width: 120%;
+  padding-top: 120%;
+  -webkit-transition: width .2s ease-out, padding-top .2s ease-out;
+  -o-transition: width .2s ease-out, padding-top .2s ease-out;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
 .lesson-header p {
   display: none;
 }
 
-.card-buttons .btn, .card-buttons .btn:hover,  .card-buttons .btn:focus, .card-buttons .btn:active {
+.card-buttons .btn-card, .card-buttons .btn-card:hover, .card-buttons .btn-card:focus, .card-buttons .btn-card:active {
   color: #fff !important;
 }
 
@@ -77,7 +161,6 @@
   .flashcard {
     width: 70%
   }
-
   .card-buttons {
     width: 50%
   }
