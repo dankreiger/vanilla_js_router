@@ -15,10 +15,15 @@
   transform: scale(1.03);
 }
 
-.homepage, .homepage:hover  {
+.homepage  {
   font-size: 0.8em;
   color: #333;
-  transform: scale(1);
+  transition: 0.25s all ease;
+}
+
+.homepage:hover {
+  color: #222;
+  transform: scale(1.03);
 }
 
 /* END submenu */
