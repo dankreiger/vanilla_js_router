@@ -1,35 +1,10 @@
-/* submenu */
-.submenu-list {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.submenu-item {
-  padding: 0.75rem;
-  font-size: 1em;
-  transition: 0.25s all ease;
-  color: #4881ea;
-}
-.submenu-item:hover {
-  color: #5f91ec;
-  transform: scale(1.03);
-}
-
-.homepage  {
+.homepage, .prev-page  {
   font-size: 0.8em;
-  color: #333;
-  transition: 0.25s all ease;
 }
-
-.homepage:hover {
-  color: #222;
-  transform: scale(1.03);
-}
-
-/* END submenu */
 
 /* flashcard */
 .flashcard {
+  display: none;
   background: #fff;
   cursor: pointer;
   width: 80%;
@@ -43,9 +18,9 @@
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -66,9 +41,6 @@
 .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-.prev-link {
-  margin-top: 2rem;
 }
 
 /* END flashcard */

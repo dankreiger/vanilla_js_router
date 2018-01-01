@@ -1,11 +1,17 @@
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.show-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;  
 }
 
 .flex-columns {
@@ -21,8 +27,23 @@
           justify-content: center;
 }
 
+.flex-justify-space-around {
+  -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
+}
+
 .flex-align-items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+
+.margin-top-single {
+  margin-top: 1rem;
+}
+
+.width-50 {
+  width: 50%;
 }

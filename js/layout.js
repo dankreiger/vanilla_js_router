@@ -25,6 +25,15 @@ class Layout {
           $('.front').removeClass('hidden');
         }
       });
+
+      $('.next-card').click(function() {
+        if($('.flashcard').index($('.flashcard.show-flex')) < $('.flashcard').length - 1) {
+          $('.flashcard.show-flex').removeClass('show-flex').next().addClass('show-flex');
+        } else {
+          $('.flashcard.show-flex').removeClass('show-flex');
+          $('.flashcard').first().addClass('show-flex');
+        }
+      });
     }
   }
 }
