@@ -11,7 +11,7 @@
 .show-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important;  
+  display: flex !important;
 }
 
 .flex-columns {
@@ -42,6 +42,14 @@
 
 .margin-top-single {
   margin-top: 1rem;
+}
+
+.margin-top-double {
+  margin-top: 2rem;
+}
+
+.full-width {
+  width: 100%
 }
 
 .width-50 {
