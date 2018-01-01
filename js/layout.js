@@ -14,6 +14,7 @@ class Layout {
       page.show(div);
       el.appendChild(div);
 
+      // not so nice here - please refactor
       $('.flashcard').click(function(e) {
         e.preventDefault();
         $(this).toggleClass('flipped-card');
@@ -32,6 +33,11 @@ class Layout {
         } else {
           $('.flashcard.show-flex').removeClass('show-flex');
           $('.flashcard').first().addClass('show-flex');
+        }
+        if ($('.flashcard').hasClass('flipped-card')) {
+          $('.flashcard').removeClass('flipped-card');
+          $('.back').addClass('hidden');
+          $('.front').removeClass('hidden');
         }
       });
     }
