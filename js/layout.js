@@ -40,6 +40,19 @@ class Layout {
           $('.front').removeClass('hidden');
         }
       });
+      $('.prev-card').click(function() {
+        if($('.flashcard').index($('.flashcard.show-flex'))) {
+          $('.flashcard.show-flex').removeClass('show-flex').prev().addClass('show-flex');
+        } else {
+          $('.flashcard.show-flex').removeClass('show-flex');
+          $('.flashcard').last().addClass('show-flex');
+        }
+        if ($('.flashcard').hasClass('flipped-card')) {
+          $('.flashcard').removeClass('flipped-card');
+          $('.back').addClass('hidden');
+          $('.front').removeClass('hidden');
+        }
+      });
     }
   }
 }
