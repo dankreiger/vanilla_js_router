@@ -45,9 +45,16 @@
   transform: rotateY(180deg);
 }
 
+.card-buttons {
+  width: 100%
+}
+
 @media (min-width: 576px) {
   .flashcard {
     width: 80%;
+  }
+  .card-buttons {
+    width: 50%
   }
 }
 
