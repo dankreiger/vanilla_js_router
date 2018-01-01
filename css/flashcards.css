@@ -1,13 +1,36 @@
-/*-------- flex container --------*/
+/* submenu */
+.submenu-list {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
+.submenu-item {
+  padding: 0.75rem;
+  font-size: 1em;
+  transition: 0.25s all ease;
+  color: #4881ea;
+}
+.submenu-item:hover {
+  color: #5f91ec;
+  transform: scale(1.03);
+}
+
+.homepage, .homepage:hover  {
+  font-size: 0.8em;
+  color: #333;
+  transform: scale(1);
+}
+
+/* END submenu */
+
+/* flashcard */
 .flashcard {
   background: #fff;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   border-radius: 2px;
   /*max-width: 600px;*/
-  height: 100%;
-  max-height: 400px;
+  height: 300px;
   max-width: 800px;
   font-size: 1.5em;
   -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
@@ -34,3 +57,13 @@
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.prev-link {
+  margin-top: 2rem;
+}
+
+/* END flashcard */
