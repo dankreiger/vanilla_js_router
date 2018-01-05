@@ -62,6 +62,7 @@ class Layout {
 
       $('.say-btn').click(function() {
         let artyom = new Artyom();
+        console.log($(this).parent().parent().data('lang'))
         artyom.say($('.show-flex .front').text(), {
           lang:$(this).parent().parent().data('lang')
         });
