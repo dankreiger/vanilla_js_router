@@ -67,6 +67,10 @@ class Layout {
           lang:$(this).parent().parent().data('lang')
         });
       });
+
+      $('.back-btn').click(function() {
+        window.location.href = $(this).parent().parent().data('parent');
+      });
     }
   }
 }

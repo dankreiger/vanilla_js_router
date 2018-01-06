@@ -48,6 +48,10 @@
   margin-top: 2rem;
 }
 
+.margin-bottom-single {
+  margin-bottom: 1rem;
+}
+
 .full-width {
   width: 100%
 }

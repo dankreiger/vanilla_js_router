@@ -10,8 +10,6 @@
 
 .flashcard {
   display: none;
-  margin-top: 0.3rem;
-  margin-bottom: 0.7rem;
   background: #fff;
   cursor: pointer;
   width: 100%;
@@ -48,6 +46,7 @@
 
 .lesson-content {
   height: 87vh;
+  justify-content: space-around;
 }
 
 .card-buttons {
@@ -57,7 +56,7 @@
   justify-content: space-around;
 }
 
-.btn-card {
+.btn-card:not(.transparent) {
   flex: 1 1 100%;
   cursor: pointer;
   position: relative;
@@ -100,6 +99,16 @@
   background-color: #FB8C00;
 }
 
+.btn-card.transparent {
+  background-color: transparent;
+  color: #000 !important;
+  margin-right: 1.5rem;
+}
+
+.btn-card.transparent:hover, .btn-card.transparent:focus {
+  background-color: transparent;
+}
+
 .btn-card.red {
   background-color: #FF4136;
 }
@@ -136,11 +145,11 @@
   transition: width .2s ease-out, padding-top .2s ease-out;
 }
 
-.lesson-header p {
+/* .lesson-header p {
   display: none;
-}
+} */
 
-.card-buttons .btn-card, .card-buttons .btn-card:hover, .card-buttons .btn-card:focus, .card-buttons .btn-card:active {
+.card-buttons .btn-card:not(.transparent), .card-buttons .btn-card:hover:not(.transparent), .card-buttons .btn-card:focus:not(.transparent), .card-buttons .btn-card:active:not(.transparent) {
   color: #fff !important;
 }
 
@@ -153,7 +162,7 @@
     display: flex;
   }
   .flashcard {
-    height: 250px;
+    height: 270px;
   }
 }
 
